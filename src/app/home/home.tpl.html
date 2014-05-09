@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1>MyApp</h1>
+
+  <p class="lead">
+    Do stuff quick!
+  </p>
+
+  <div data-ar-mobile>
+    <img ng-src="http://placehold.it/50x50" src="" alt="mobile" />
+    Only shown on mobile devices {{ email }}
+  </div>
+  <div data-ar-tablet>
+    <img ng-src="http://placehold.it/100x100" src="" alt="tablet" />
+    Only shown on tablet devices {{ email }}
+  </div>
+  <div data-ar-desktop>
+    <img ng-src="http://placehold.it/150x150" src="" alt="desktop" />
+    Only shown on desktop devices {{ email }}
+  </div>
+  <div data-ar-responsive="{ 'Mobile': true, 'Tablet': true, 'Desktop': false }">
+    <img ng-src="http://placehold.it/10x10" src="" alt="tablet and mobile" />
+    Only shown on mobile or tablet devices {{ email }}
+  </div>
+</div>
+

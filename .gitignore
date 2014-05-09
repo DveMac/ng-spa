@@ -1,0 +1,9 @@
+*.sw*
+*~
+atlassian*.xml
+.idea
+build/
+bin/
+coverage/
+node_modules/
+vendor/

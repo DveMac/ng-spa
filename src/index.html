@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="MyApp" ng-controller="AppCtrl">
+<head>
+  <title ng-bind="pageTitle"></title>
+
+  <meta property="og:title" content="MyApp"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://MyApp"/>
+  <meta property="og:image" content="https://"/>
+  <meta property="og:description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+  <% }); %>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script>
+  <% }); %>
+</head>
+<body>
+<header ng-controller="HeaderCtrl" ng-include="'layout/header.tpl.html'"></header>
+
+<div class="container" ui-view="main"></div>
+
+<footer class="footer">
+  footer
+</footer>
+</body>
+</html>

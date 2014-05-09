@@ -1,0 +1,10 @@
+{
+  "name": "MyApp",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "^1.2",
+    "angular-mocks": "^1.2",
+    "angular-ui-router": "^0.2"
+  },
+  "dependencies": {}
+}
