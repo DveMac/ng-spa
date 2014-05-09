@@ -44,6 +44,7 @@
     "grunt-cli": "^0.1.13",
     "karma-junit-reporter": "^0.2.2",
     "esprima": "^1.2.1",
-    "load-grunt-config": "git+https://github.com/DveMac/load-grunt-config.git"
+    "load-grunt-config": "git+https://github.com/DveMac/load-grunt-config.git",
+    "grunt-lodash": "^0.3.0"
   }
 }

@@ -22,8 +22,9 @@ var build_config = {
 
   vendor_files: {
     js: [
-      'vendor/jquery/dist/jquery.js',
+      'vendor/lodash.build.js',
       'vendor/angular/angular.js',
+      'vendor/angular-module-shim/index.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js'
     ],
@@ -38,10 +39,8 @@ var build_config = {
 
 module.exports = function (grunt) {
 
-  // measures the time each task takes
   require('time-grunt')(grunt);
 
-  // load grunt config
   require('load-grunt-config')(grunt, { data: build_config });
 
   grunt.renameTask("watch", "delta");

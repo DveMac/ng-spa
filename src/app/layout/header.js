@@ -1,6 +1,5 @@
-angular.module('MyApp.layout', [
+angular.module('MyApp.layout')
 
-])
   .controller('HeaderCtrl', function HeaderCtrl($scope) {
     $scope.items = [
       { title: 'Home', state: 'home' },
