@@ -53,8 +53,6 @@ module.exports = {
         src: [
             '<%= vendor_files.js %>',
             '<%= build_dir %>/src/**/*.js',
-            '<%= html2js.common.dest %>',
-            '<%= html2js.app.dest %>',
             '<%= vendor_files.css %>',
             '<%= build_dir %>/assets/<%= package.name %>-<%= package.version %>.css'
         ]

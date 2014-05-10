@@ -1,6 +1,4 @@
 angular.module('app', [
-    'templates-app',
-    'templates-common',
     'ui.router',
     'app.layout',
     'app.home',
@@ -12,4 +10,5 @@ angular.module('app', [
     })
 
     .run(function run() {
+
     });

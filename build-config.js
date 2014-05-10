@@ -8,9 +8,6 @@ module.exports = {
         js: [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
         jsunit: [ 'src/**/*.spec.js' ],
 
-        atpl: [ 'src/app/**/*.tpl.html' ],
-        ctpl: [ 'src/common/**/*.tpl.html' ],
-
         html: [ 'src/index.html' ],
         sass: 'src/sass/main.scss'
     },
@@ -26,8 +23,7 @@ module.exports = {
             'vendor/lodash.build.js',
             'vendor/angular/angular.js',
             'vendor/angular-module-shim/index.js',
-            'vendor/angular-ui-router/release/angular-ui-router.js',
-            'vendor/angular-ui-utils/modules/route/route.js'
+            'vendor/angular-ui-router/release/angular-ui-router.js'
         ],
         css: [
 

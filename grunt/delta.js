@@ -52,17 +52,6 @@ module.exports = {
     },
 
     /**
-     * When our templates change, we only rewrite the template cache.
-     */
-    tpls: {
-        files: [
-            '<%= app_files.atpl %>',
-            '<%= app_files.ctpl %>'
-        ],
-        tasks: [ 'html2js' ]
-    },
-
-    /**
      * When the CSS files change, we need to compile and minify them.
      */
     sass: {

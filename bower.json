@@ -4,7 +4,8 @@
   "devDependencies": {
     "angular": "^1.2",
     "angular-mocks": "^1.2",
-    "angular-ui-router": "^0.2"
+    "angular-ui-router": "^0.2",
+    "angular-module-shim": "git+https://github.com/DveMac/angular-module-shim.git"
   },
   "dependencies": {}
 }

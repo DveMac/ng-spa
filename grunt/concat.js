@@ -26,8 +26,6 @@ module.exports = {
             '<%= vendor_files.js %>',
             'module.prefix',
             '<%= build_dir %>/src/**/*.js',
-            '<%= html2js.app.dest %>',
-            '<%= html2js.common.dest %>',
             'module.suffix'
         ],
         dest: '<%= compile_dir %>/assets/<%= package.name %>-<%= package.version %>.js'
