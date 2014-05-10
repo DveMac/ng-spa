@@ -1,1 +1,1 @@
-angular.module('MyApp.events')
+angular.module('app.events');

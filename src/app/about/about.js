@@ -1,18 +1,14 @@
-angular.module('MyApp.about', ['ui.router'])
+angular.module('app.about')
 
-  .config(function config($stateProvider) {
-    $stateProvider.state('about', {
-      url: '/about',
-      views: {
-        "main": {
-          controller: 'AboutCtrl',
-          templateUrl: 'about/about.tpl.html'
-        }
-      },
-      data: { pageTitle: 'What is It?' }
+    .config(function config($stateProvider) {
+        $stateProvider.state('about', {
+            url: '/about',
+            views: {
+                "main": {
+                    controller: 'AboutCtrl',
+                    templateUrl: 'about/about.tpl.html'
+                }
+            },
+            data: { pageTitle: 'What is It?' }
+        });
     });
-  })
-
-  .controller('AboutCtrl', function AboutCtrl($scope) {
-
-  });

@@ -6,9 +6,9 @@
 var grunt = require('grunt');
 
 function filterFor(pattern, files) {
-  return files.filter(function (file) {
-    return file.match(pattern);
-  });
+    return files.filter(function (file) {
+        return file.match(pattern);
+    });
 }
 
 /**
@@ -17,27 +17,27 @@ function filterFor(pattern, files) {
  * compiled as grunt templates for use by Karma. Yay!
  */
 grunt.registerMultiTask('karmaconfig', 'Process karma config templates', function () {
-  var jsFiles = filterFor(/\.js$/, this.filesSrc);
+    var jsFiles = filterFor(/\.js$/, this.filesSrc);
 
-  grunt.file.copy('karma/karma-unit.tpl.js', grunt.config('build_dir') + '/karma-unit.js', {
-    process: function (contents, path) {
-      return grunt.template.process(contents, {
-        data: {
-          scripts: jsFiles
+    grunt.file.copy('karma/karma-unit.tpl.js', grunt.config('build_dir') + '/karma-unit.js', {
+        process: function (contents) {
+            return grunt.template.process(contents, {
+                data: {
+                    scripts: jsFiles
+                }
+            });
         }
-      });
-    }
-  });
+    });
 });
 
 module.exports = {
-  unit: {
-    dir: '<%= build_dir %>',
-    src: [
-      '<%= vendor_files.js %>',
-      '<%= html2js.app.dest %>',
-      '<%= html2js.common.dest %>',
-      '<%= test_files.js %>'
-    ]
-  }
+    unit: {
+        dir: '<%= build_dir %>',
+        src: [
+            '<%= vendor_files.js %>',
+            '<%= html2js.app.dest %>',
+            '<%= html2js.common.dest %>',
+            '<%= test_files.js %>'
+        ]
+    }
 };

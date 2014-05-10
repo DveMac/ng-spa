@@ -15,7 +15,6 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.4",
-    "grunt-contrib-less": "~0.11.0",
     "grunt-contrib-clean": "^0.4.1",
     "grunt-contrib-copy": "^0.4.1",
     "grunt-contrib-jshint": "^0.4.3",
@@ -45,6 +44,7 @@
     "karma-junit-reporter": "^0.2.2",
     "esprima": "^1.2.1",
     "load-grunt-config": "git+https://github.com/DveMac/load-grunt-config.git",
-    "grunt-lodash": "^0.3.0"
+    "grunt-lodash": "^0.3.0",
+    "grunt-contrib-sass": "^0.7.3"
   }
 }

@@ -11,7 +11,7 @@ var build_config = {
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
-    less: 'src/less/main.less'
+    sass: 'src/sass/main.scss'
   },
 
   test_files: {
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
     "clean",
     "html2js",
     "jshint",
-    "less:build",
+    "sass:build",
     "concat:build_css",
     "copy:build_app_assets",
     "copy:build_vendor_assets",
@@ -73,7 +73,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask("compile", [
-    "less:compile",
+    "sass:compile",
     "copy:compile_assets",
     "ngmin",
     "concat:compile_js",

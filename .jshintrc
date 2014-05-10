@@ -1,0 +1,17 @@
+{
+  "curly": true,
+  "immed": true,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "boss": true,
+  "eqnull": true,
+  "globals": {
+    "_": true,
+    "angular": true,
+    "describe": true,
+    "beforeEach": true,
+    "it": true,
+    "expect": true
+  }
+}
