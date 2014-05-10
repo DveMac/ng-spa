@@ -1,5 +1,3 @@
-/*global describe,beforeEach,it,expect*/
-
 describe('responsive directive', function () {
 
     var elm, scope,
@@ -33,17 +31,21 @@ describe('responsive directive', function () {
         scope.$digest();
     }
 
-    describe('on a mobile device', function () {
-
-        beforeEach(function () {
+    function setupFor(display) {
+        return function () {
             module(function ($provide) {
-                $provide.value('$window', iphone);
+                $provide.value('$window', display);
             });
-            module('angular-responsive');
+            module('app.common');
             inject(function ($rootScope) {
                 scope = $rootScope;
             });
-        });
+        };
+    }
+
+    describe('on a mobile device', function () {
+
+        beforeEach(setupFor(iphone));
 
         it('should show only mobile elements', function () {
             compileDirective();
@@ -55,15 +57,7 @@ describe('responsive directive', function () {
 
     describe('on a tablet device', function () {
 
-        beforeEach(function () {
-            module(function ($provide) {
-                $provide.value('$window', ipad);
-            });
-            module('angular-responsive');
-            inject(function ($rootScope) {
-                scope = $rootScope;
-            });
-        });
+        beforeEach(setupFor(ipad));
 
         it('should show only tablet elements', function () {
             compileDirective();
@@ -75,15 +69,7 @@ describe('responsive directive', function () {
 
     describe('on a desktop', function () {
 
-        beforeEach(function () {
-            module(function ($provide) {
-                $provide.value('$window', desktop);
-            });
-            module('angular-responsive');
-            inject(function ($rootScope) {
-                scope = $rootScope;
-            });
-        });
+        beforeEach(setupFor(desktop));
 
         it('should show only desktop elements', function () {
             compileDirective();

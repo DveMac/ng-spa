@@ -17,8 +17,10 @@ module.exports = {
         },
         reporters: ['coverage'],
         coverageReporter: {
-            type: 'cobertura',
-            dir: 'coverage/'
+            reporters: [
+                { type: 'cobertura', dir: 'coverage/' },
+                { type: 'html', dir: 'coverage/' }
+            ]
         }
     },
     ci: {

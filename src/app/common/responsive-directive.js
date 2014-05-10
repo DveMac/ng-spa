@@ -63,7 +63,7 @@
     }
 
     angular
-        .module('angular-responsive', [])
+        .module('app.common')
         .provider('responsiveHelper', ["$windowProvider", function ($windowProvider) {
             // Gather winWidth and smartDevice information only 1x at app startup...
 
@@ -140,4 +140,4 @@
         }]);
 
 
-})(window.angular);
+}(window.angular));

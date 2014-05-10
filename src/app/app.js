@@ -1,7 +1,6 @@
 angular.module('app', [
     'templates-app',
     'templates-common',
-    'angular-responsive',
     'ui.router',
     'app.layout',
     'app.home',
