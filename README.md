@@ -1,9 +1,14 @@
 ##Angular SPA Boilerplate
 
-- Produces Jenkins compatible test & coverage reports
-
-
 Based on ngBoilerplate [https://github.com/ngbp/ngbp]()
+
+####Setup
+
+```
+npm run init            # installs npm and bower components
+grunt watch             # build and starts server on :4000
+
+```
 
 
 ####Usage
