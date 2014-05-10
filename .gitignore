@@ -1,7 +1,7 @@
-*.sw*
 *~
 atlassian*.xml
 .idea
+.sass-cache
 build/
 bin/
 coverage/
